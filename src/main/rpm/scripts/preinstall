@@ -1,0 +1,3 @@
+contentdir=/var/rpmdemo
+
+/sbin/useradd -r -U -c "RPM Demo" -d ${contentdir} -s /sbin/nologin rpmdemo 2>/dev/null || :

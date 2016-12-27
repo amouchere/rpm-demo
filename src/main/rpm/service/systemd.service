@@ -1,0 +1,11 @@
+[Unit]
+Description=rpmdemo
+After=syslog.target
+
+[Service]
+User=rpmdemo
+ExecStart=/var/rpmdemo/rpmdemo.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

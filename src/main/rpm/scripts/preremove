@@ -1,0 +1,2 @@
+/bin/systemctl stop rpmdemo >/dev/null 2>&1
+/bin/systemctl disable rpmdemo >/dev/null 2>&1
