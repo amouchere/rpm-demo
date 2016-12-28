@@ -16,7 +16,10 @@ RUN curl --output /tmp/jdk-${MAJOR_VERSION}u${MINOR_VERSION}-linux-x64.rpm\
 
 ENV JAVA_HOME=/usr/java/jdk1.${MAJOR_VERSION}.0_${MINOR_VERSION}
 
+# Expose application default port
+EXPOSE 8080
+
 VOLUME /project
 WORKDIR /project
 
-CMD ["/bin/bash"]
+CMD ["/project/mvnw", "clean", "package", "rpm:rpm"]

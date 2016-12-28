@@ -67,16 +67,16 @@
                 <artifactId>rpm-maven-plugin</artifactId>
                 <version>2.1.5</version>
                 <configuration>
-                    <license>GPL (c) 2016</license>
+                    <license>GPLv3</license>
                     <distribution>pierrecarre 2016</distribution>
                     <group>Application/Demo</group>
                     <needarch>noarch</needarch>
                     <packager>pierrecarre</packager>
                     <changelogFile>CHANGELOG.md</changelogFile>
                     <provides>
-                        <provide>rpmdemo</provide>
-                        <provide>config(rpmdemo)</provide>
-                        <provide>rpmdemo(noarch)</provide>
+                        <provide>${appname}</provide>
+                        <provide>config(${appname})</provide>
+                        <provide>${appname}(noarch)</provide>
                         <provide>productdemo</provide>
                     </provides>
                     <requires>
