@@ -70,7 +70,7 @@
                     <license>GPLv3</license>
                     <distribution>pierrecarre 2016</distribution>
                     <group>Application/Demo</group>
-                    <needarch>noarch</needarch>
+                    <needarch>centos.noarch</needarch>
                     <packager>pierrecarre</packager>
                     <changelogFile>CHANGELOG.md</changelogFile>
                     <provides>
